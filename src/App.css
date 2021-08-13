@@ -260,7 +260,6 @@ a {
 }
 
 .name {
-    /* color: rgb(172, 221, 228); */
     color: seashell;
 }
 
@@ -275,8 +274,8 @@ a {
     transition: color 0.5s linear;
 }
 
-.links a:focus {
-    color: seashell;
+.link-selected {
+    color: seashell !important;
     border-bottom: 2px solid seashell;
 }
 
@@ -284,7 +283,6 @@ a {
 
 .skills {
     display: flex;
-    margin-top: 23vh;
     justify-content: center;
 }
 
@@ -293,15 +291,16 @@ a {
     height: 33vh;
     width: 16vw;
     cursor: pointer;
-    margin: 0 1vw;
-    transition: 0.5s ease-in-out;
+    margin: 23vh 1vw 0 1vw;
+    transition: 0.05s ease-in-out;
 }
 
 .wrapper:hover {
     height: 55vh;
     width: 25vw;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.05s ease-in-out;
+    margin-top: 10vh;
 }
 
 .background {
@@ -311,7 +310,6 @@ a {
     height: 33vh;
     width: 100%;
     border: 15px solid black;
-    transition: 0.5s ease-in-out;
     background-color: black;
 }
 
@@ -326,18 +324,9 @@ a {
     width: 100%;
     justify-content: center;
     font-size: 1.1rem;
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
+    z-index: 2;
 }
-
-/* .text {
-    color: transparent;
-} */
-
-/* .coding-details:hover,
-.general-details:hover,
-.other-details:hover {
-    visibility: visible;
-}*/
 
 .coding-details,
 .general-details,
@@ -354,17 +343,10 @@ a {
     padding-top: 2rem;
 }
 
-.other-details li {
-    font-size: 0.9rem;
-    margin-left: 3rem;
-}
-
-.other-details h4 {
-    margin-top: 0.8rem;
-}
-
-.text:hover {
-    visibility: visible !important; 
+.text:hover .coding-details,
+.text:hover .general-details,
+.text:hover .other-details {
+    visibility: visible; 
     position: absolute;
     color: seashell;
     background-color: rgb(8, 8, 36);
@@ -377,20 +359,20 @@ a {
     width: 100%;
     text-align: left;
     padding: 0 3vw;
-    transition: 0.7s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #coding-text h3:hover {
     transform: translateY(-100px);
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #general-text h3:hover {
     transform: translateY(-140px);
-    transition: 0.4s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #other-text h3:hover {
-    transform: translateY(-160px);
-    transition: 0.4s ease-in-out;
+    transform: translateY(-170px);
+    transition: 0.1s ease-in-out;
 }

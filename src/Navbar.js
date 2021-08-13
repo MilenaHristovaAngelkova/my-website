@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 
 const Navbar = () => {
+    useEffect(() => {
+        let path = window.location.pathname.slice(1);
+        let {children} = document.querySelectorAll('.links')[0];
+        
+        for (let link of children) {
+            link.classList.remove("link-selected");
+        }
+        
+        let element = document.getElementById(path + "-link");
+        element ? element.classList.add("link-selected") : element.classList.add("");
+    });
+    
     return (
         <nav className="navbar">
             <div className="name">
@@ -8,10 +21,10 @@ const Navbar = () => {
             </div>
             <div className="links">
                 <Link to="/skills" id="skills-link">Skills</Link>
-                <Link>Projects</Link>
-                <Link>Work Experience</Link>
-                <Link>Education</Link>
-                <Link>Contact Me</Link>
+                <Link to="/projects" id="projects-link">Projects</Link>
+                <Link to="/">Work Experience</Link>
+                <Link to="/">Education</Link>
+                <Link to="/">Contact Me</Link>
             </div>
         </nav>
     );

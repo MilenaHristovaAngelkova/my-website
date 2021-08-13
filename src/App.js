@@ -8,12 +8,16 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/my-website">
           <div className="App">
             <Home />
           </div>
           </Route>
           <Route path="/skills">
+            <Navbar />
+            <Skills />
+          </Route>
+          <Route path="/projects">
             <Navbar />
             <Skills />
           </Route>
