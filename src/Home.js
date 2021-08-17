@@ -8,9 +8,9 @@ const Home = (props) => {
                 <span><h2>UNDER CONSTRUCTION</h2></span>
             </header>
             <nav className="bubbles hov">
-                <span id="skills"><button><Link to="/skills" target="_blank">Skills</Link></button></span>
-                <span id="projects"><button>Projects</button></span>
-                <span id="experience"><button>Work Experience</button></span>
+                <span id="skills"><button><Link to="/skills">Skills</Link></button></span>
+                <span id="projects"><button><Link to="/projects">Projects</Link></button></span>
+                <span id="experience"><button><Link to="/experience">Work Experience</Link></button></span>
             </nav>
             <nav className="more-bubbles hov">
                 <span id="education"><button>Education</button></span>

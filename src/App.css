@@ -112,12 +112,12 @@ a {
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
- #projects button {
+ #projects a {
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
     color: aliceblue;
  }
 
- #experience button {
+ #experience a {
     color:rgb(252, 236, 216);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
@@ -290,17 +290,13 @@ a {
     position: relative;
     height: 33vh;
     width: 16vw;
-    cursor: pointer;
     margin: 23vh 1vw 0 1vw;
-    transition: 0.05s ease-in-out;
 }
 
 .wrapper:hover {
     height: 55vh;
     width: 25vw;
-    cursor: pointer;
-    transition: 0.05s ease-in-out;
-    margin-top: 10vh;
+    margin-top: 13vh;
 }
 
 .background {
@@ -313,7 +309,7 @@ a {
     background-color: black;
 }
 
-.text h3 {
+.text .main-heading {
     position: absolute;
     color: seashell;
     text-shadow: 4px 4px 4px black;
@@ -324,8 +320,6 @@ a {
     width: 100%;
     justify-content: center;
     font-size: 1.1rem;
-    transition: 0.1s ease-in-out;
-    z-index: 2;
 }
 
 .coding-details,
@@ -334,18 +328,39 @@ a {
     visibility: hidden;
 }
 
-.coding-details li,
-.general-details li {
-    margin-bottom: 0.5rem; 
+.coding-details ul,
+.general-details ul {
+    margin-top: 3vh;
+    margin-left: 1vw;
 }
 
-.general-details ul {
-    padding-top: 2rem;
+.coding-details li,
+.general-details li {
+    color: whitesmoke;
+    font-size: 0.95rem;
+}
+
+.coding-details li {
+    margin-bottom: 0.5rem;
+}
+
+.general-details li {
+    margin-bottom: 0.8rem;
+}
+
+.other-details h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.other-sublist {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    color: whitesmoke;
 }
 
 .text:hover .coding-details,
-.text:hover .general-details,
-.text:hover .other-details {
+.text:hover .general-details {
     visibility: visible; 
     position: absolute;
     color: seashell;
@@ -358,21 +373,308 @@ a {
     height: 100%;
     width: 100%;
     text-align: left;
-    padding: 0 3vw;
-    transition: 0.1s ease-in-out;
+    padding: 0 2vw;
 }
 
-#coding-text h3:hover {
-    transform: translateY(-100px);
-    transition: 0.1s ease-in-out;
+.text:hover .other-details {
+    visibility: visible; 
+    position: absolute;
+    color: seashell;
+    background-color: rgb(8, 8, 36);
+    top: 0;
+    display: block;
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    padding: 3vh 2vw;
 }
 
-#general-text h3:hover {
-    transform: translateY(-140px);
-    transition: 0.1s ease-in-out;
+.text:hover .other-details h3 {
+    text-align: center;
 }
 
-#other-text h3:hover {
-    transform: translateY(-170px);
-    transition: 0.1s ease-in-out;
+/* Projects section styles */
+
+.projects-container {
+    display: block;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 26vh 10vw 10vh 10vw;
+}
+
+.projects-wrapper {
+    position: relative;
+    height: 28vh;
+    width: 25vw;
+ }
+
+.projects-background {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 28vh;
+    width: 100%;
+    border: 15px solid black;
+    background-color: black;
+}
+
+.description {
+    visibility: hidden;
+}
+
+.projects-wrapper:hover .description {
+    visibility: visible; 
+    position: absolute;
+    color: seashell;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0 2vw;
+}
+
+.description p {
+    margin: 3vh;
+    font-size: 0.9rem;
+}
+
+.description a {
+    text-decoration: none;
+    color: rgb(8, 8, 36);
+}
+
+.description button {
+    background-color: rgb(172, 221, 228);
+    color: rgb(8, 8, 36);
+    font-weight: bold;
+    border-radius: 8px;
+    width: 6vw;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.description button:hover {
+    background-color:  whitesmoke;
+}
+
+/* Resume section styles */
+
+.resume-details {
+    color: seashell;
+    margin: 0 10vw;
+}
+
+.resume-imgs {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    max-width: 77vw;
+}
+
+.resume-details h3 {
+    display: block;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+#resume-img-details {
+    height: 58vh;
+    width: 55vw;
+    box-shadow: 5px 10px 30px 0.5px rgba(172, 221, 228, 0.4);
+}
+
+#resume-img-mob, 
+#resume-mob-details {
+    height: 58vh;
+    width: 10vw;
+    box-shadow: 5px 10px 30px 0.5px rgba(172, 221, 228, 0.4);
+}
+
+#resume-img-mob {
+    margin: 0 0.5vw;
+}
+
+.resume-more-info {
+    display: block;
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin: 10vh 0;
+}
+
+.resume-more-info a {
+    color: rgb(172, 221, 228);
+    font-style: italic;
+}
+
+.resume-more-info a:hover {
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* Homepage section styles */
+
+.homepage-details {
+    display: block;
+    text-align: center;
+    color: seashell;
+}
+
+.homepage-details h3 {
+    margin: 10vh 0;
+}
+
+.homepage-details video {
+    height: 60vh;
+    width: 50vw;
+}
+
+.homepage-more-info {
+    margin: 10vh 0;
+    font-size: 0.9rem;
+    color: whitesmoke;
+}
+
+.homepage-more-info a {
+    color: rgb(172, 221, 228);
+    font-style: italic;
+}
+
+.homepage-more-info a:hover {
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* Space Stuff section styles */
+
+.space-stuff-details {
+    color: seashell;
+    margin: 0 10vw;
+}
+
+.space-stuff-details h3 {
+    display: block;
+    text-align: center;
+    margin: 10vh 0;
+}
+
+.space-stuff-imgs {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 10vh 5vw;
+}
+
+#space-stuff-img-details {
+    height: 58vh;
+    width: 50vw;
+    box-shadow: 5px 10px 30px 0.5px rgba(172, 221, 228, 0.4);
+}
+
+#space-stuff-img-mob {
+    height: 58vh;
+    width: 8.5vw;
+    box-shadow: 5px 10px 30px 0.5px rgba(172, 221, 228, 0.4);
+}
+
+.space-stuff-more-info {
+    display: block;
+    text-align: justify;
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin: 10vh 14vw 10vh 5vw;
+}
+
+.space-stuff-more-info a {
+    color: rgb(172, 221, 228);
+    font-style: italic;
+}
+
+.space-stuff-more-info a:hover {
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* Experience section styles */
+
+.experience-container {
+    display: block;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 7vh 10vw;
+}
+
+.experience-wrapper {
+    position: relative;
+    height: 30vh;
+    width: 20vw;
+}
+
+.work-background {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    border: 15px solid black;
+    background-color: black;
+}
+
+.job-description {
+    visibility: hidden;
+}
+
+.experience-wrapper:hover .job-description {
+    visibility: visible; 
+    position: absolute;
+    color: seashell;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0 2vw;
+}
+
+.job-description h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.job-description h4 {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+.job-description p {
+    font-size: 0.8rem;
+    color: whitesmoke;
+}
+
+.job-description button {
+    margin: 1rem 0;
+    background-color: rgb(172, 221, 228);
+    color: rgb(8, 8, 36);
+    font-weight: bold;
+    border-radius: 8px;
+    width: 6vw;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.job-description button:hover {
+    background-color:  whitesmoke;
 }

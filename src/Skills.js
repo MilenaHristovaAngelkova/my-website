@@ -10,10 +10,11 @@ const Skills = () => {
                     style= {{ backgroundImage: `url(${coding})` }}>
                 </div>
                 <section className="text" id="coding-text">
-                   <h3>Coding-Related Skills</h3>
+                   <h3 class="main-heading">Coding-Related Skills</h3>
                    <div className="coding-details">
+                   <h3>Coding-Related Skills</h3>
                    <ul>
-                        <li>Main: JavaScript, React, HTML, CSS, GitHub</li>
+                        <li>Main skills: JavaScript, React, HTML, CSS, GitHub.</li>
                         <li>Some previous experience with C# and JIRA.</li>
                     </ul>
                    </div>
@@ -24,8 +25,9 @@ const Skills = () => {
                     style= {{ backgroundImage: `url(${computer})` }}>
                 </div>
                 <section className="text" id="general-text">
-                   <h3>General Computer Skills</h3>
+                   <h3 class="main-heading">General Computer Skills</h3>
                    <div className="general-details">
+                   <h3>General Computer Skills</h3>
                     <ul>
                         <li>Skilled user of MS Office (Word, Excel, Power Point, Outlook), Adobe, Open Office, internet browsers, e-mails, 
                             messengers, compressing/archiving software.</li>
@@ -39,8 +41,9 @@ const Skills = () => {
                     style= {{ backgroundImage: `url(${city})` }}>
                 </div>
                 <section className="text" id="other-text">
-                    <h3>Other Skills</h3>
+                    <h3 class="main-heading">Other Skills</h3>
                     <div className="other-details">
+                    <h3>Other Skills</h3>
                         <h4>Languages</h4>
                         <ul className="other-sublist">
                             <li>Bulgarian - native</li>
