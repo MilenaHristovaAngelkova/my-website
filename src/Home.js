@@ -13,8 +13,8 @@ const Home = (props) => {
                 <span id="experience"><button><Link to="/experience">Work Experience</Link></button></span>
             </nav>
             <nav className="more-bubbles hov">
-                <span id="education"><button>Education</button></span>
-                <span id="contact"><button>Contact Me</button></span>
+                <span id="education"><button><Link to="/education">Education</Link></button></span>
+                <span id="about"><button><Link to="/about">About Me</Link></button></span>
             </nav>
         </div>
     );

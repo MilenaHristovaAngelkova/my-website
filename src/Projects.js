@@ -7,9 +7,7 @@ import HomepageSection from "./HomepageSection";
 import SpaceStuffSection from "./SpaceStuffSection";
 
 const Projects = () => {
-    const [resumeMoreVis, setResumeMoreVis] = useState(false);
-    const [homepageMoreVis, setHomepageMoreVis] = useState(false);
-    const [spaceStuffMoreVis, setSpaceStuffMoreVis] = useState(false);
+    const [mark, setMark] = useState("");
 
     return (
         <div className="projects-container">
@@ -22,9 +20,9 @@ const Projects = () => {
                         <h3>Resume Project</h3>
                         <p>This project was a website with my resume details on it.</p>
                         <button onClick={() => {
-                            !resumeMoreVis ? setResumeMoreVis(true) : setResumeMoreVis(false)
+                            mark !== "resumeMore" ? setMark("resumeMore") : setMark("")
                             }}>
-                            {!resumeMoreVis ? "More details" : "Less details"}
+                            {mark !== "resumeMore" ? "More details" : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -36,9 +34,9 @@ const Projects = () => {
                         <h3>Homepage Project</h3>
                         <p>This project was the homepage idea for my website.</p>
                         <button onClick={() => {
-                            !homepageMoreVis ? setHomepageMoreVis(true) : setHomepageMoreVis(false)    
+                            mark !== "homepageMore" ? setMark("homepageMore") : setMark("")
                             }}>
-                            {!homepageMoreVis ? "More details" : "Less details"}
+                            {mark!== "homepageMore" ? "More details" : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -50,16 +48,16 @@ const Projects = () => {
                         <h3>Space Stuff Project</h3>
                         <p>This is a project that fetches space-related pictures and info.</p>
                         <button onClick={() => {
-                            !spaceStuffMoreVis ? setSpaceStuffMoreVis(true) : setSpaceStuffMoreVis(false)
+                            mark !== "spaceStuffMore" ? setMark("spaceStuffMore") : setMark("")
                             }}>
-                            {!spaceStuffMoreVis ? "More details" : "Less details"}
+                            {mark !== "spaceStuffMore" ? "More details" : "Less details"}
                         </button>
                     </section>
                 </div>
             </article>
-            {resumeMoreVis ? <ResumeSection /> : null}
-            {homepageMoreVis ? <HomepageSection /> : null}
-            {spaceStuffMoreVis ? <SpaceStuffSection /> : null}
+            {mark === "resumeMore" ? <ResumeSection /> : null}
+            {mark === "homepageMore" ? <HomepageSection /> : null}
+            {mark === "spaceStuffMore" ? <SpaceStuffSection /> : null}
         </div>
     );
 }

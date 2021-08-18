@@ -5,6 +5,9 @@ import Navbar from './Navbar';
 import Skills from './Skills';
 import Projects from './Projects';
 import Experience from './Experience';
+import Education from './Education';
+import Footer from './Footer';
+import About from './About';
 
 function App() {
   return (
@@ -27,7 +30,14 @@ function App() {
               <Route path="/experience">
                 <Experience />
               </Route>
+              <Route path="/education">
+                <Education />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
             </Switch>
+            <Footer />
           </Router>
       </Switch>
     </Router>

@@ -1,10 +1,10 @@
 const Manager = () => {
     return (
-        <article className="manager-info">
-            <h4 class="dates">2020 - 2021</h4>
-            <h4 class="job">Reporting, Processes and Training Manager</h4>
-            <h4 class="job">CS Legal and Responsible Gaming</h4>
-            <h5>GVC Services EOOD, Sofia, Bulgaria</h5>
+        <article className="job-info">
+            <h3>Reporting, Processes and Training Manager</h3>
+            <h3 className="subtitle">CS Legal and Responsible Gaming</h3>
+            <h4>October 2020 - March 2021</h4>
+            <h4>GVC Services EOOD, Sofia, Bulgaria</h4>
             <ul>
                 <li>Managing internal and external descriptive and analytical reports, as well as internal processes and 
                     trainings/workshops, working closely with the other managers and the head of the department</li>

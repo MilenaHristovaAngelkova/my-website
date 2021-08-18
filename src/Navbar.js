@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
-    const [selectedL, setSelectedL] = useState(false);
+    const [selectedL, setSelectedL] = useState("");
 
     useEffect(() => {
         let path = window.location.pathname.slice(1);
@@ -22,11 +22,30 @@ const Navbar = () => {
                 <span>Milena Hristova-Angelkova</span>
             </div>
             <div className="links">
-                <Link to="/skills" id="skills-link" onClick={() => setSelectedL(true)}>Skills</Link>
-                <Link to="/projects" id="projects-link" onClick={() => setSelectedL(true)}>Projects</Link>
-                <Link to="/experience" id="experience-link" onClick={() => setSelectedL(true)}>Work Experience</Link>
-                <Link to="/">Education</Link>
-                <Link to="/">Contact Me</Link>
+                <Link to="/skills" id="skills-link" onClick={() => {
+                    selectedL !== "skillsL" ? setSelectedL("skillsL") : setSelectedL("");
+                    }}>
+                    Skills
+                </Link>
+                <Link to="/projects" id="projects-link" onClick={() => {
+                    selectedL !== "projectsL" ? setSelectedL("projectsL") : setSelectedL("");
+                    }}>
+                    Projects
+                </Link>
+                <Link to="/experience" id="experience-link" onClick={() => {
+                    selectedL !== "experienceL" ? setSelectedL("experienceL") : setSelectedL("");
+                    }}>
+                    Work Experience
+                </Link>
+                <Link to="/education" id="education-link" onClick={() => {
+                    selectedL !== "educationL" ? setSelectedL("educationL") : setSelectedL("");
+                    }}>
+                    Education</Link>
+                <Link to="/about" id="about-link" onClick={() => {
+                    selectedL !== "aboutL" ? setSelectedL("aboutL") : setSelectedL("");
+                    }}>
+                    About Me
+                </Link>
             </div>
         </nav>
     );

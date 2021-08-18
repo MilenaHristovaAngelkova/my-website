@@ -12,6 +12,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Noto Sans JP", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -103,7 +106,7 @@ a {
      margin: 0 0 0 20vw;
  }
 
- #contact {
+ #about {
      margin: 0 0 0 30vw;  
  }
 
@@ -122,12 +125,12 @@ a {
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
- #education button {
+ #education a {
     color: rgb(109, 233, 250);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
- #contact button {
+ #about a {
     color: rgb(217, 216, 252);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
@@ -254,9 +257,9 @@ a {
     display: flex;
     justify-content: space-around;
     background-image: linear-gradient(rgb(26, 26, 31) 40%, transparent 60%);
-    height: 17vh;
+    height: 20vh;
     margin: 0;
-    padding: 1.8vh 0;
+    padding: 2vh 0;
 }
 
 .name {
@@ -279,6 +282,47 @@ a {
     border-bottom: 2px solid seashell;
 }
 
+/* Footer styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 19vh;
+    background-image: linear-gradient(transparent 40%, rgb(26, 26, 31) 60%);
+}
+
+address {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+address p {
+    margin-right: 1vw;
+    color:whitesmoke;
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+address li {
+    margin-right: 14vw;
+    font-size: 0.8rem;
+    font-style: normal;
+    list-style-type: none;
+}
+
+address a {
+    color: rgb(172, 221, 228);
+}
+
+address a:hover {
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
 /* Skills section styles */
 
 .skills {
@@ -290,13 +334,13 @@ a {
     position: relative;
     height: 33vh;
     width: 16vw;
-    margin: 23vh 1vw 0 1vw;
+    margin: 17vh 1vw 0 1vw;
 }
 
 .wrapper:hover {
     height: 55vh;
     width: 25vw;
-    margin-top: 13vh;
+    margin-top: 5vh;
 }
 
 .background {
@@ -325,7 +369,7 @@ a {
 .coding-details,
 .general-details,
 .other-details {
-    visibility: hidden;
+    display: none;
 }
 
 .coding-details ul,
@@ -361,7 +405,6 @@ a {
 
 .text:hover .coding-details,
 .text:hover .general-details {
-    visibility: visible; 
     position: absolute;
     color: seashell;
     background-color: rgb(8, 8, 36);
@@ -403,7 +446,7 @@ a {
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 26vh 10vw 10vh 10vw;
+    margin: 17vh 10vw 10vh 10vw;
 }
 
 .projects-wrapper {
@@ -506,7 +549,7 @@ a {
     display: block;
     font-size: 0.9rem;
     color: whitesmoke;
-    margin: 10vh 0;
+    margin: 10vh 0 20vh 0;
 }
 
 .resume-more-info a {
@@ -537,7 +580,7 @@ a {
 }
 
 .homepage-more-info {
-    margin: 10vh 0;
+    margin: 10vh 0 20vh 0;
     font-size: 0.9rem;
     color: whitesmoke;
 }
@@ -588,7 +631,7 @@ a {
     text-align: justify;
     font-size: 0.9rem;
     color: whitesmoke;
-    margin: 10vh 14vw 10vh 5vw;
+    margin: 10vh 14vw 20vh 5vw;
 }
 
 .space-stuff-more-info a {
@@ -610,13 +653,14 @@ a {
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 7vh 10vw;
+    margin: 1vh 8vw;
 }
 
 .experience-wrapper {
     position: relative;
     height: 30vh;
     width: 20vw;
+    margin-bottom: 1vh;
 }
 
 .work-background {
@@ -677,4 +721,168 @@ a {
 
 .job-description button:hover {
     background-color:  whitesmoke;
+}
+
+/* jobs sections styles */
+
+.job-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    margin: 10vh 10vw;
+}
+
+.job-info h3,
+.job-info h4 {
+    color: seashell;
+    text-align: center;
+}
+
+.job-info h4 {
+    margin-top: 1.5vh;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+}
+
+.job-info ul {
+    margin: 10vh 10vw;
+}
+
+.smallerUl li {
+    margin: 0 10vw;
+}
+
+/* Education section styles */
+
+.education {
+    display: flex;
+    margin: 14vh 22vw;
+}
+
+.edu-wrapper {
+    position: relative;
+    height: 35vh;
+    width: 26vw;
+    margin: 0 0.5vw;
+}
+
+.edu-background {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 100%;
+    border: 15px solid black;
+    background-color: black;
+}
+
+.edu-main-heading {
+    visibility: visible;
+    position: absolute;
+    color: seashell;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.edu-details {
+    visibility: hidden;
+}
+
+.edu-wrapper:hover .edu-main-heading {
+    display: none;
+}
+
+.edu-wrapper:hover .edu-details {
+    visibility: visible;
+    position: absolute;
+    color: seashell;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    padding: 0 2.5vw;
+}
+
+.edu-details h3 {
+    padding: 0.5rem 0 1rem 0;
+}
+
+#coding-heading {
+    padding-bottom: 2rem;
+}
+
+.edu-details li {
+    color: whitesmoke;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    /* margin: 0 19vw; */
+}
+
+.photo img {
+    /* height: 50vh;
+    width: 17vw; */
+    height: 20vh;
+    width: 7vw;
+    margin-right: 5vw;
+    /* margin-top: 6vh; */
+    margin-top: -10vh;
+    margin-left: 15vw;
+}
+
+.about-wrapper {
+    position: relative;
+    margin-top: -11vh;
+    height: 80vh;
+    width: 40vw;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 
+        inset 5px 10px 30px 0.5px rgba(169, 215, 241, 0.5),
+        5px 10px 30px 3px rgba(19, 19, 49, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* .about-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 1.55rem solid transparent;
+    border-right-color: rgba(169, 215, 241, 0.4);
+    border-left: 0;
+    margin-top: -1.55rem;
+    margin-left: -1.55rem;
+} */
+
+.about-info {
+    position: absolute;
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px 0.5px rgb(8, 8, 36);
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-top: 9vh;
 }

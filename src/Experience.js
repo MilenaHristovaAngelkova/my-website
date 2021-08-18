@@ -7,15 +7,15 @@ import csRepImg from "./images/imattsmart-eELCRf8nwsI-unsplash.jpg";
 import addictionImg from "./images/michael-longmire-dLYk1p9YB0s-unsplash.jpg";
 import therapyImg from "./images/dan-meyers-hluOJZjLVXc-unsplash.jpg";
 import Manager from "./Manager";
+import TeamLead from "./TeamLead";
+import CsLrg from "./CsLrg";
+import Cs from "./Cs";
+import CsRep from "./CsRep";
+import Volunteer from "./Volunteer";
+import Internship from "./Internship";
 
 const Experience = () => {
-    //MAY NEED TO USE AN EFFECT HOOK LIKE THE ONE IN NAV TO CLEAR MARKS/IDS OR MAY NEED TO USE A CLASS INSTEAD OF A FUNCTION?
-    // const [isClicked, setIsClicked] = useState(false);
-    const [mark, setMark] = useState(null);
-
-    // const handleClick = () => {
-    //     !isClicked ? setIsClicked(true) : setIsClicked(false);
-    // }
+    const [mark, setMark] = useState("");
 
     return (
         <div className="experience-container">
@@ -29,8 +29,7 @@ const Experience = () => {
                         <h4>2020 - 2021</h4>
                         <p>GVC Services EOOD, Sofia, Bulgaria</p>
                         <button onClick={() => {
-                            setMark("btnMngr");
-                            // handleClick()
+                            mark !== "btnMngr" ? setMark("btnMngr") : setMark("");
                             }
                             }>
                             {mark !== "btnMngr" ? "More details" : "Less details"}
@@ -45,7 +44,12 @@ const Experience = () => {
                         <h3>CS Legal and Responsible Gaming Team Lead</h3>
                         <h4>2019 - 2020</h4>
                         <p>GVC Services EOOD, Sofia, Bulgaria</p>
-                        <button>More details</button>
+                        <button onClick={() => {
+                            mark !== "btnTL" ? setMark("btnTL") : setMark("");
+                            }
+                            }>
+                            {mark !== "btnTL" ? "More details" : "Less details"}
+                        </button>
                     </section>
                 </div>
                 <div className="experience-wrapper">
@@ -56,7 +60,12 @@ const Experience = () => {
                         <h3>CS Legal and Responsible Gaming Associate</h3>
                         <h4>2017 - 2019</h4>
                         <p>GVC Services EOOD (former Bwin.Party Services EOOD), Sofia, Bulgaria</p>
-                        <button>More details</button>
+                        <button onClick={() => {
+                            mark !== "btnLrg" ? setMark("btnLrg") : setMark("");
+                            }
+                            }>
+                            {mark !== "btnLrg" ? "More details" : "Less details"}
+                        </button>
                     </section>
                 </div>  
                 <div className="experience-wrapper">
@@ -67,7 +76,12 @@ const Experience = () => {
                         <h3>Customer Service Representative</h3>
                         <h4>2012 - 2017</h4>
                         <p>Bwin.Party Services EOOD, Sofia, Bulgaria</p>
-                        <button>More details</button>
+                        <button onClick={() => {
+                            mark !== "btnCs" ? setMark("btnCs") : setMark("");
+                            }
+                            }>
+                            {mark !== "btnCs" ? "More details" : "Less details"}
+                        </button>
                     </section>
                 </div>
                 <div className="experience-wrapper">
@@ -76,9 +90,14 @@ const Experience = () => {
                     </div>
                     <section className="job-description">
                         <h3>Customer Service Representative</h3>
-                        <h4>February - August 2012</h4>
+                        <h4>2012</h4>
                         <p>V-Online Systems, Sofia, Bulgaria</p>
-                        <button>More details</button>
+                        <button onClick={() => {
+                            mark !== "btnRep" ? setMark("btnRep") : setMark("");
+                            }
+                            }>
+                            {mark !== "btnRep" ? "More details" : "Less details"}
+                        </button>
                     </section>
                 </div>
                 <div className="experience-wrapper">
@@ -87,9 +106,14 @@ const Experience = () => {
                     </div>
                     <section className="job-description">
                         <h3>Volunteer (Occasional)</h3>
-                        <h4>December 2011 – March 2012</h4>
+                        <h4>2011 – 2012</h4>
                         <p>National Centre for Drugs and Addictions, Sofia, Bulgaria</p>
-                        <button>More details</button>
+                        <button onClick={() => {
+                            mark !== "btnVol" ? setMark("btnVol") : setMark("");
+                            }
+                            }>
+                            {mark !== "btnVol" ? "More details" : "Less details"}
+                        </button>
                     </section>
                 </div>
                 <div className="experience-wrapper">
@@ -98,13 +122,24 @@ const Experience = () => {
                     </div>
                     <section className="job-description">
                         <h3>Internship</h3>
-                        <h4>May – July 2011</h4>
+                        <h4>2011</h4>
                         <p>The Antibullying Centre, Trinity College Dublin, Dublin, Ireland</p>
-                        <button>More details</button>
+                        <button onClick={() => {
+                            mark !== "btnInt" ? setMark("btnInt") : setMark("");
+                            }
+                            }>
+                            {mark !== "btnInt" ? "More details" : "Less details"}
+                        </button>
                     </section>
                 </div>                                 
             </article>
             {mark === "btnMngr" ? <Manager /> : null}
+            {mark === "btnTL" ? <TeamLead /> : null}
+            {mark === "btnLrg" ? <CsLrg /> : null}
+            {mark === "btnCs" ? <Cs /> : null}
+            {mark === "btnRep" ? <CsRep /> : null}
+            {mark === "btnVol" ? <Volunteer /> : null}
+            {mark === "btnInt" ? <Internship /> : null}
         </div>
     );
 }
