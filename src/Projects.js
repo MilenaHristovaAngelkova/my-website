@@ -14,15 +14,15 @@ const Projects = () => {
             <article className="projects">
                 <div className="projects-wrapper">
                     <div className="projects-background" 
-                        style= {{ backgroundImage: `url(${resume})` }}>
+                        style= {{ backgroundImage: `url(${space})` }}>
                     </div>
                     <section className="description">
-                        <h3>Resume Project</h3>
-                        <p>This project was a website with my resume details on it.</p>
+                        <h3>Space Stuff Project</h3>
+                        <p>This is a project that fetches space-related pictures and info.</p>
                         <button onClick={() => {
-                            mark !== "resumeMore" ? setMark("resumeMore") : setMark("")
+                            mark !== "spaceStuffMore" ? setMark("spaceStuffMore") : setMark("")
                             }}>
-                            {mark !== "resumeMore" ? "More details" : "Less details"}
+                            {mark !== "spaceStuffMore" ? "More details" : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -42,15 +42,15 @@ const Projects = () => {
                 </div>
                 <div className="projects-wrapper">
                     <div className="projects-background" 
-                        style= {{ backgroundImage: `url(${space})` }}>
+                        style= {{ backgroundImage: `url(${resume})` }}>
                     </div>
                     <section className="description">
-                        <h3>Space Stuff Project</h3>
-                        <p>This is a project that fetches space-related pictures and info.</p>
+                        <h3>Resume Project</h3>
+                        <p>This project was a website with my resume details on it.</p>
                         <button onClick={() => {
-                            mark !== "spaceStuffMore" ? setMark("spaceStuffMore") : setMark("")
+                            mark !== "resumeMore" ? setMark("resumeMore") : setMark("")
                             }}>
-                            {mark !== "spaceStuffMore" ? "More details" : "Less details"}
+                            {mark !== "resumeMore" ? "More details" : "Less details"}
                         </button>
                     </section>
                 </div>

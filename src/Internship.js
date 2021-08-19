@@ -1,6 +1,8 @@
+import { backToTop } from "./backToTop";
+
 const Internship = () => {
     return (
-        <article className="job-info">
+        <article className="job-info" id="job-info-intr">
             <h3>Internship</h3>
             <h4>May – July 2011</h4>
             <h4>The Antibullying Centre, Trinity College Dublin, Dublin, Ireland</h4>
@@ -11,6 +13,7 @@ const Internship = () => {
                 <li>Carrying out research</li>
                 <li>Partaking in workshops and presentations</li>
             </ul>
+            <button onClick={backToTop}>Back to top</button>
         </article>
     );
 }

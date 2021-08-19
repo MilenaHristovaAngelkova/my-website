@@ -1,6 +1,8 @@
+import { backToTop } from "./backToTop";
+
 const CsLrg = () => {
     return (
-        <article className="job-info">
+        <article className="job-info" id="job-info-lrg">
             <h3>CS Legal and Responsible Gaming Associate</h3>
             <h4>2017 - 2019</h4>
             <h4>GVC Services EOOD (former Bwin.Party Services EOOD), Sofia, Bulgaria</h4>
@@ -16,6 +18,7 @@ const CsLrg = () => {
                 <li>Providing online and on-spot training to new teams joining the company at other locations, as well as 
                     induction trainings for new joiners and refresher trainings for existing teams</li>    
             </ul>
+            <button onClick={backToTop}>Back to top</button>
         </article>
     );
 }

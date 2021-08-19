@@ -13,9 +13,16 @@ const Skills = () => {
                    <h3 class="main-heading">Coding-Related Skills</h3>
                    <div className="coding-details">
                    <h3>Coding-Related Skills</h3>
-                   <ul>
-                        <li>Main skills: JavaScript, React, HTML, CSS, GitHub.</li>
-                        <li>Some previous experience with C# and JIRA.</li>
+                   <ul id="coding-main-ul">
+                        <li>Main skills:</li>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>GitHub</li>
+                            </ul>
+                        <li>Some previous experience with C#.</li>
                     </ul>
                    </div>
                 </section>
@@ -31,7 +38,8 @@ const Skills = () => {
                     <ul>
                         <li>Skilled user of MS Office (Word, Excel, Power Point, Outlook), Adobe, Open Office, internet browsers, e-mails, 
                             messengers, compressing/archiving software.</li>
-                        <li>Experience with a multitude of different admin and communication tools from my previous jobs.</li>
+                        <li>Experience with a multitude of different admin, communication and ticketing tools, including JIRA, 
+                            from my previous jobs.</li>
                     </ul>
                     </div>
                 </section>

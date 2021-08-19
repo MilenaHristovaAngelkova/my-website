@@ -14,8 +14,8 @@ const ResumeSection = () => {
                 </section> 
                 <section className="resume-more-info">
                     <p>This was my first project. The purpose was to put the information from my resume online in the form of a website. 
-                    It was done with HTML, CSS and JavaScript, and it is responsive.</p><br />
-                    <p>It is currently published here: <a href="https://milenahristovaangelkova.github.io/resume/">
+                    It was done with HTML, CSS and Vanilla JavaScript, and it is responsive.</p><br />
+                    <p>You can see it here: <a href="https://milenahristovaangelkova.github.io/resume/">
                     https://milenahristovaangelkova.github.io/resume/</a></p>
                     <p>My GitHub repo for it is <a href="https://github.com/MilenaHristovaAngelkova/resume">
                     https://github.com/MilenaHristovaAngelkova/resume</a></p>

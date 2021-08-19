@@ -1,6 +1,8 @@
+import { backToTop } from "./backToTop";
+
 const CsRep = () => {
     return (
-        <article className="job-info">
+        <article className="job-info" id="job-info-rep">
             <h3>Customer Service Representative</h3>
             <h4>February - August 2012</h4>
             <h4>V-Online Systems, Sofia, Bulgaria</h4>
@@ -12,6 +14,7 @@ const CsRep = () => {
                 <li>Preparing reports, manuals and presentations</li>
                 <li>Escalating complex issues</li>
             </ul>
+            <button onClick={backToTop}>Back to top</button>
         </article>
     );
 }

@@ -1,6 +1,8 @@
+import { backToTop } from "./backToTop";
+
 const TeamLead = () => {
     return (
-        <article className="job-info">
+        <article className="job-info" id="job-info-tl">
             <h3>CS Legal and Responsible Gaming Team Lead</h3>
             <h4>2019 - 2020</h4>
             <h4>GVC Services EOOD, Sofia, Bulgaria</h4>
@@ -20,6 +22,7 @@ const TeamLead = () => {
                 <li>Providing conflict resolution where needed</li>
                 <li>Acting as a Mental Health First Aider</li>
             </ul>
+            <button onClick={backToTop}>Back to top</button>
         </article>
     );
 }

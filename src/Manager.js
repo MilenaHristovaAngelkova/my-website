@@ -1,6 +1,8 @@
+import { backToTop } from "./backToTop";
+
 const Manager = () => {
     return (
-        <article className="job-info">
+        <article className="job-info" id="job-info-mngr">
             <h3>Reporting, Processes and Training Manager</h3>
             <h3 className="subtitle">CS Legal and Responsible Gaming</h3>
             <h4>October 2020 - March 2021</h4>
@@ -23,6 +25,7 @@ const Manager = () => {
                 <li>Working with a variety of internal tools</li>
                 <li>Acting as a Mental Health First Aider</li>
             </ul>
+            <button onClick={backToTop}>Back to top</button>
         </article>
     );
 }

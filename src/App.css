@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("/src/images/cristian-palmer-XexawgzYOBc-unsplash-modified.jpg");
     background-size: cover;
@@ -15,6 +19,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -360,7 +366,7 @@ address a:hover {
     display: none;
 }
 
-.coding-details ul,
+#coding-main-ul,
 .general-details ul {
     margin-top: 3vh;
     margin-left: 1vw;
@@ -372,8 +378,8 @@ address a:hover {
     font-size: 0.95rem;
 }
 
-.coding-details li {
-    margin-bottom: 0.5rem;
+#coding-main-ul ul {
+    margin: 1vh 2vw;
 }
 
 .general-details li {
@@ -413,8 +419,10 @@ address a:hover {
     color: seashell;
     background-color: rgb(8, 8, 36);
     top: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: left;
+    align-content: center;
     height: 100%;
     width: 100%;
     text-align: left;
@@ -428,13 +436,15 @@ address a:hover {
 /* Projects section styles */
 
 .projects-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 17vh 10vw 10vh 10vw;
+    margin: 17vh 10vw 2vh 10vw;
 }
 
 .projects-wrapper {
@@ -707,6 +717,10 @@ address a:hover {
     cursor: pointer;
 }
 
+.job-description button a {
+    color: rgb(8, 8, 36);
+}
+
 .job-description button:hover {
     background-color:  whitesmoke;
 }
@@ -741,6 +755,21 @@ address a:hover {
 
 .smallerUl li {
     margin: 0 10vw;
+}
+
+.job-info button {
+    background-color: rgb(172, 221, 228);
+    color: rgb(8, 8, 36);
+    font-weight: bold;
+    border-radius: 8px;
+    width: 6vw;
+    height: 6vh;
+    cursor: pointer;
+    margin: 0 0 10vh 35vw;
+}
+
+.job-info button:hover {
+    background-color:  whitesmoke;
 }
 
 /* Education section styles */

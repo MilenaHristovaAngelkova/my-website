@@ -8,8 +8,9 @@ const HomepageSection = () => {
                 Your brower does not support the video tag.
             </video>
             <section className="homepage-more-info">
-                    <p>For my second project I created a homepage, inspired by bubbles. It was done with HTML and CSS.</p><br />
-                    <p>It is currently published here: <a href="https://milenahristovaangelkova.github.io/homepage/">
+                    <p>I created a homepage, inspired by bubbles. It was done with HTML and CSS. It was subsequently incorporated in 
+                    this React project (my-website).</p><br />
+                    <p>You can see it here: <a href="https://milenahristovaangelkova.github.io/homepage/">
                     https://milenahristovaangelkova.github.io/homepage/</a></p>
                     <p>My GitHub repo for it is <a href="https://github.com/MilenaHristovaAngelkova/homepage">
                     https://github.com/MilenaHristovaAngelkova/homepage</a></p>

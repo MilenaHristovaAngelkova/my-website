@@ -32,7 +32,7 @@ const Experience = () => {
                             mark !== "btnMngr" ? setMark("btnMngr") : setMark("");
                             }
                             }>
-                            {mark !== "btnMngr" ? "More details" : "Less details"}
+                            {mark !== "btnMngr" ? <a href="#job-info-mngr">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -48,7 +48,7 @@ const Experience = () => {
                             mark !== "btnTL" ? setMark("btnTL") : setMark("");
                             }
                             }>
-                            {mark !== "btnTL" ? "More details" : "Less details"}
+                            {mark !== "btnTL" ? <a href="#job-info-tl">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -64,7 +64,7 @@ const Experience = () => {
                             mark !== "btnLrg" ? setMark("btnLrg") : setMark("");
                             }
                             }>
-                            {mark !== "btnLrg" ? "More details" : "Less details"}
+                            {mark !== "btnLrg" ? <a href="#job-info-lrg">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>  
@@ -80,7 +80,7 @@ const Experience = () => {
                             mark !== "btnCs" ? setMark("btnCs") : setMark("");
                             }
                             }>
-                            {mark !== "btnCs" ? "More details" : "Less details"}
+                            {mark !== "btnCs" ? <a href="#job-info-cs">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -96,7 +96,7 @@ const Experience = () => {
                             mark !== "btnRep" ? setMark("btnRep") : setMark("");
                             }
                             }>
-                            {mark !== "btnRep" ? "More details" : "Less details"}
+                            {mark !== "btnRep" ? <a href="#job-info-rep">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -112,7 +112,7 @@ const Experience = () => {
                             mark !== "btnVol" ? setMark("btnVol") : setMark("");
                             }
                             }>
-                            {mark !== "btnVol" ? "More details" : "Less details"}
+                            {mark !== "btnVol" ? <a href="#job-info-vltr">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -128,7 +128,7 @@ const Experience = () => {
                             mark !== "btnInt" ? setMark("btnInt") : setMark("");
                             }
                             }>
-                            {mark !== "btnInt" ? "More details" : "Less details"}
+                            {mark !== "btnInt" ? <a href="#job-info-intr">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>                                 
