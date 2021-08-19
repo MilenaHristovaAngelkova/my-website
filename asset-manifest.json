@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.317b3582.chunk.css",
-    "main.js": "/my-website/static/js/main.5b8ef22b.chunk.js",
-    "main.js.map": "/my-website/static/js/main.5b8ef22b.chunk.js.map",
+    "main.css": "/my-website/static/css/main.552aed30.chunk.css",
+    "main.js": "/my-website/static/js/main.145b40d4.chunk.js",
+    "main.js.map": "/my-website/static/js/main.145b40d4.chunk.js.map",
     "runtime-main.js": "/my-website/static/js/runtime-main.ecd9b44f.js",
     "runtime-main.js.map": "/my-website/static/js/runtime-main.ecd9b44f.js.map",
     "static/js/2.057e7aaa.chunk.js": "/my-website/static/js/2.057e7aaa.chunk.js",
     "static/js/2.057e7aaa.chunk.js.map": "/my-website/static/js/2.057e7aaa.chunk.js.map",
     "index.html": "/my-website/index.html",
-    "static/css/main.317b3582.chunk.css.map": "/my-website/static/css/main.317b3582.chunk.css.map",
+    "static/css/main.552aed30.chunk.css.map": "/my-website/static/css/main.552aed30.chunk.css.map",
     "static/js/2.057e7aaa.chunk.js.LICENSE.txt": "/my-website/static/js/2.057e7aaa.chunk.js.LICENSE.txt",
     "static/media/Bubbles.4d1570b6.mp4": "/my-website/static/media/Bubbles.4d1570b6.mp4",
     "static/media/Homepage.352ca58e.png": "/my-website/static/media/Homepage.352ca58e.png",
@@ -19,7 +19,7 @@
     "static/media/Resume.50f6ccfb.png": "/my-website/static/media/Resume.50f6ccfb.png",
     "static/media/Space-stuff-details.d43c9741.png": "/my-website/static/media/Space-stuff-details.d43c9741.png",
     "static/media/Space-stuff-mob.e88f0c61.png": "/my-website/static/media/Space-stuff-mob.e88f0c61.png",
-    "static/media/Space-stuff.69b5b993.png": "/my-website/static/media/Space-stuff.69b5b993.png",
+    "static/media/Space-stuff.637fd5e1.png": "/my-website/static/media/Space-stuff.637fd5e1.png",
     "static/media/adam-borkowski-s1oMlP-RlqU-unsplash-modified.fc82d2d4.jpg": "/my-website/static/media/adam-borkowski-s1oMlP-RlqU-unsplash-modified.fc82d2d4.jpg",
     "static/media/bindhiya-bindhu-VUJldY3zw1U-unsplash-modified.9a0aba82.jpg": "/my-website/static/media/bindhiya-bindhu-VUJldY3zw1U-unsplash-modified.9a0aba82.jpg",
     "static/media/App.css": "/my-website/static/media/cristian-palmer-XexawgzYOBc-unsplash-modified.f6f281f7.jpg",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.ecd9b44f.js",
     "static/js/2.057e7aaa.chunk.js",
-    "static/css/main.317b3582.chunk.css",
-    "static/js/main.5b8ef22b.chunk.js"
+    "static/css/main.552aed30.chunk.css",
+    "static/js/main.145b40d4.chunk.js"
   ]
 }
