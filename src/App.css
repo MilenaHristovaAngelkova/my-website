@@ -53,15 +53,15 @@ a {
     animation: typing 4s steps(30, end);
 }
 
-.bubbles {
+.bubbles,
+.more-bubbles {
     display: flex;
     margin: 0;
     padding: 0;
     outline: 1px solid transparent;
 }
 
-.bubbles button,
-.more-bubbles button {
+.home a {
     height: 9rem;
     width: 9rem;
     background: transparent;
@@ -82,80 +82,71 @@ a {
     -o-animation: bubbles-motion 10s linear infinite;
     animation: bubbles-motion 10s linear infinite;
  }
+
+ .bubbles a,
+ .more-bubbles a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
  
-
- #skills {
+ #skillsB {
     margin: 35vh 8vw 0 5vw;
- }
-
- #projects {
-     margin: 33vh 7vw 0 17vw;
- }
-
- #experience {
-     margin: 36vh 5vw 0 23vw;
- }
-
- #education {
-     margin: 0 0 0 20vw;
- }
-
- #about {
-     margin: 0 0 0 30vw;  
- }
-
- #skills a {
     color: rgb(222, 252, 189);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
- #projects a {
+ #projectsB {
+    margin: 33vh 7vw 0 17vw;
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
     color: aliceblue;
  }
 
- #experience a {
+ #experienceB {
+    margin: 36vh 5vw 0 23vw;
     color:rgb(252, 236, 216);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
- #education a {
+ #educationB {
+    margin: 0 0 0 20vw;
     color: rgb(109, 233, 250);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
- #about a {
+ #aboutB {
+    margin: 0 0 0 30vw;  
     color: rgb(217, 216, 252);
     text-shadow: 1px 1px 1px rgb(8, 14, 104);
  }
 
-.hov button:hover {
+.hov a:hover {
     animation: none;
     height: 10rem;
     width: 10rem;
 }
 
-#skills button:hover {
+#skillsB:hover {
     text-shadow: 1px 1px 1px black;
     box-shadow: 0 0 30px 3px rgb(222, 252, 189);
 }
 
-#projects button:hover {
+#projectsB:hover {
     text-shadow: 1px 1px 1px black;
     box-shadow: 0 0 30px 3px aliceblue;
 }
 
-#experience button:hover {
+#experienceB:hover {
     text-shadow: 1px 1px 1px black;
     box-shadow: 0 0 30px 3px rgb(222, 252, 189);
 }
 
-#education button:hover {
+#educationB:hover {
     text-shadow: 1px 1px 1px black;
     box-shadow: 0 0 30px 3px rgb(109, 233, 250);
 }
 
-#contact button:hover {
+#aboutB:hover {
     text-shadow: 1px 1px 1px black;
     box-shadow: 0 0 30px 3px rgb(217, 216, 252);
 }
@@ -256,8 +247,12 @@ a {
     padding: 2vh 0;
 }
 
-.name {
+.name a {
     color: seashell;
+}
+
+.name a:hover {
+    text-shadow: 1px 1px 1px rgb(172, 221, 228);
 }
 
 .links a {
@@ -547,7 +542,7 @@ address a:hover {
     display: block;
     font-size: 0.9rem;
     color: whitesmoke;
-    margin: 10vh 0 20vh 0;
+    margin: 10vh 0;
 }
 
 .resume-more-info a {
@@ -578,7 +573,7 @@ address a:hover {
 }
 
 .homepage-more-info {
-    margin: 10vh 0 20vh 0;
+    margin: 10vh 0;
     font-size: 0.9rem;
     color: whitesmoke;
 }
@@ -629,7 +624,7 @@ address a:hover {
     text-align: justify;
     font-size: 0.9rem;
     color: whitesmoke;
-    margin: 10vh 14vw 20vh 5vw;
+    margin: 10vh 14vw 10vh 5vw;
 }
 
 .space-stuff-more-info a {
@@ -757,7 +752,10 @@ address a:hover {
     margin: 0 10vw;
 }
 
-.job-info button {
+/* Button to top of page styles */
+
+.btn-top,
+.btn-top-projects {
     background-color: rgb(172, 221, 228);
     color: rgb(8, 8, 36);
     font-weight: bold;
@@ -768,7 +766,20 @@ address a:hover {
     margin: 0 0 10vh 35vw;
 }
 
-.job-info button:hover {
+.btn-top {
+    margin: 0 0 10vh 35vw;
+}
+
+.btn-top-projects {
+    margin-bottom: 20vh;
+}
+
+#btn-homepage-top {
+    margin: 0 0 20vh 0;
+}
+
+.btn-top:hover,
+.btn-top-projects:hover {
     background-color:  whitesmoke;
 }
 
@@ -852,8 +863,8 @@ address a:hover {
 }
 
 .photo img {
-    height: 20vh;
-    width: 7vw;
+    height: 150px;
+    width: 110px;
     margin-right: 5vw;
     margin-top: -10vh;
     margin-left: 14.7vw;
@@ -862,8 +873,8 @@ address a:hover {
 .about-wrapper {
     position: relative;
     margin-top: -11vh;
-    height: 80vh;
-    width: 40vw;
+    height: 570px;
+    width: 590px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 
@@ -887,8 +898,8 @@ address a:hover {
 }
 
 #smallBubble1 {
-    height: 3vh;
-    width: 1.5vw;
+    height: 24px;
+    width: 24px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 
@@ -898,8 +909,8 @@ address a:hover {
 }
 
 #smallBubble2 {
-    height: 4vh;
-    width: 2vw;
+    height: 32px;
+    width: 32px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 
@@ -909,8 +920,8 @@ address a:hover {
 }
 
 #smallBubble3 {
-    height: 6vh;
-    width: 3vw;
+    height: 45px;
+    width: 45px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 

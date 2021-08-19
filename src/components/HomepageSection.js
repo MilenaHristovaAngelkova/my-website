@@ -1,8 +1,8 @@
-import homepageVideo from "./videos/Bubbles.mp4";
+import homepageVideo from "../videos/Bubbles.mp4";
 
 const HomepageSection = () => {
     return ( 
-        <article className="homepage-details">
+        <article className="homepage-details" id="homepage-more">
             <h3>Homepage Project More Details</h3>
             <video src={homepageVideo} controls alt="Video demo of the homepage.">
                 Your brower does not support the video tag.
@@ -14,7 +14,8 @@ const HomepageSection = () => {
                     https://milenahristovaangelkova.github.io/homepage/</a></p>
                     <p>My GitHub repo for it is <a href="https://github.com/MilenaHristovaAngelkova/homepage">
                     https://github.com/MilenaHristovaAngelkova/homepage</a></p>
-                </section> 
+            </section>
+            <button className="btn-top-projects" id="btn-homepage-top" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
         </article>
      );
 }

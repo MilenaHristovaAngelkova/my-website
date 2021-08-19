@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="name">
-                <span>Milena Hristova-Angelkova</span>
+                <a href="/my-website"> Milena Hristova-Angelkova</a>
             </div>
             <div className="links">
                 <Link to="/skills" id="skills-link" onClick={() => {

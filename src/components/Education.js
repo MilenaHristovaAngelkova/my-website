@@ -1,5 +1,5 @@
-import codingImg from "./images/filiberto-santillan-1HCb2gPk3ik-unsplash-modified.jpg";
-import booksImg from "./images/inaki-del-olmo-NIJuEQw0RKg-unsplash-modified.jpg";
+import codingImg from "../images/filiberto-santillan-1HCb2gPk3ik-unsplash-modified.jpg";
+import booksImg from "../images/inaki-del-olmo-NIJuEQw0RKg-unsplash-modified.jpg";
 
 const Education = () => {
     return (

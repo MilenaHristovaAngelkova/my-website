@@ -1,9 +1,9 @@
-import spaceStuffDetails from "./images/Space-stuff-details.png";
-import spaceStuffMob from "./images/Space-stuff-mob.png";
+import spaceStuffDetails from "./../images/Space-stuff-details.png";
+import spaceStuffMob from "./../images/Space-stuff-mob.png";
 
 const SpaceStuffSection = () => {
     return (
-        <article className="space-stuff-details">
+        <article className="space-stuff-details" id="space-more">
             <h3>Space Stuff Project More Details</h3>
             <div className="space-stuff-details-content">
                 <section className="space-stuff-imgs">
@@ -19,6 +19,7 @@ const SpaceStuffSection = () => {
                     https://github.com/MilenaHristovaAngelkova/space-stuff-project/tree/master</a></p>
                 </section> 
             </div>
+            <button className="btn-top-projects" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
         </article>
     );
 }

@@ -1,5 +1,3 @@
-import { backToTop } from "./backToTop";
-
 const CsLrg = () => {
     return (
         <article className="job-info" id="job-info-lrg">
@@ -18,7 +16,7 @@ const CsLrg = () => {
                 <li>Providing online and on-spot training to new teams joining the company at other locations, as well as 
                     induction trainings for new joiners and refresher trainings for existing teams</li>    
             </ul>
-            <button onClick={backToTop}>Back to top</button>
+            <button className="btn-top" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
         </article>
     );
 }

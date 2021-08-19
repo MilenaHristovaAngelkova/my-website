@@ -1,5 +1,3 @@
-import { backToTop } from "./backToTop";
-
 const CsRep = () => {
     return (
         <article className="job-info" id="job-info-rep">
@@ -14,7 +12,7 @@ const CsRep = () => {
                 <li>Preparing reports, manuals and presentations</li>
                 <li>Escalating complex issues</li>
             </ul>
-            <button onClick={backToTop}>Back to top</button>
+            <button className="btn-top" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
         </article>
     );
 }

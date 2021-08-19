@@ -1,22 +1,20 @@
-import './App.css';
-import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './Navbar';
-import Skills from './Skills';
-import Projects from './Projects';
-import Experience from './Experience';
-import Education from './Education';
-import Footer from './Footer';
-import About from './About';
+import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/my-website">
-          <div className="App">
+        <Route path="/my-website">
             <Home />
-          </div>
           </Route>
           <Router>
             <Navbar />

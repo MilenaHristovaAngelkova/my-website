@@ -1,10 +1,10 @@
-import resumeDetails from "./images/Resume-details.png";
-import resumeMobile from "./images/Resume-mob.png";
-import resumeMobileDetails from "./images/Resume-mob-details.png";
+import resumeDetails from "./../images/Resume-details.png";
+import resumeMobile from "./../images/Resume-mob.png";
+import resumeMobileDetails from "./../images/Resume-mob-details.png";
 
 const ResumeSection = () => {
     return (
-        <article className="resume-details">
+        <article className="resume-details" id="resume-more">
             <h3>Resume Project More Details</h3>
             <div className="resume-details-content">
                 <section className="resume-imgs">
@@ -20,7 +20,8 @@ const ResumeSection = () => {
                     <p>My GitHub repo for it is <a href="https://github.com/MilenaHristovaAngelkova/resume">
                     https://github.com/MilenaHristovaAngelkova/resume</a></p>
                 </section> 
-            </div>                   
+            </div>
+            <button className="btn-top-projects" onClick={() => window.scrollTo(0, 0)}>Back to top</button>                   
         </article>
     );
 }

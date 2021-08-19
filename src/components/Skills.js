@@ -1,6 +1,6 @@
-import coding from './images/reza-namdari-ZgZsKFnSbEA-unsplash.jpg';
-import computer from './images/bindhiya-bindhu-VUJldY3zw1U-unsplash-modified.jpg';
-import city from './images/adam-borkowski-s1oMlP-RlqU-unsplash-modified.jpg';
+import coding from './../images/reza-namdari-ZgZsKFnSbEA-unsplash.jpg';
+import computer from './../images/bindhiya-bindhu-VUJldY3zw1U-unsplash-modified.jpg';
+import city from './../images/adam-borkowski-s1oMlP-RlqU-unsplash-modified.jpg';
 
 const Skills = () => {
     return (

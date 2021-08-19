@@ -1,15 +1,15 @@
 import { useState } from "react";
-import mngrImg from "./images/myriam-jessier-eveI7MOcSmw-unsplash.jpg";
-import tlImg from "./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg";
-import lrgImg from "./images/markus-winkler-TtJ0CLjLi6w-unsplash.jpg";
-import csImg from "./images/jon-tyson-vVSleEYPSGY-unsplash.jpg";
-import csRepImg from "./images/imattsmart-eELCRf8nwsI-unsplash.jpg";
-import addictionImg from "./images/michael-longmire-dLYk1p9YB0s-unsplash.jpg";
-import therapyImg from "./images/dan-meyers-hluOJZjLVXc-unsplash.jpg";
+import mngrImg from "../images/myriam-jessier-eveI7MOcSmw-unsplash.jpg";
+import tlImg from "../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg";
+import lrgImg from "../images/markus-winkler-TtJ0CLjLi6w-unsplash.jpg";
+import csImg from "../images/jon-tyson-vVSleEYPSGY-unsplash.jpg";
+import csRepImg from "../images/imattsmart-eELCRf8nwsI-unsplash.jpg";
+import addictionImg from "../images/michael-longmire-dLYk1p9YB0s-unsplash.jpg";
+import therapyImg from "../images/dan-meyers-hluOJZjLVXc-unsplash.jpg";
 import Manager from "./Manager";
 import TeamLead from "./TeamLead";
-import CsLrg from "./CsLrg";
-import Cs from "./Cs";
+import CsLrg from "./CsLrg.js";
+import CsAgent from "./CsAgent";
 import CsRep from "./CsRep";
 import Volunteer from "./Volunteer";
 import Internship from "./Internship";
@@ -136,7 +136,7 @@ const Experience = () => {
             {mark === "btnMngr" ? <Manager /> : null}
             {mark === "btnTL" ? <TeamLead /> : null}
             {mark === "btnLrg" ? <CsLrg /> : null}
-            {mark === "btnCs" ? <Cs /> : null}
+            {mark === "btnCs" ? <CsAgent /> : null}
             {mark === "btnRep" ? <CsRep /> : null}
             {mark === "btnVol" ? <Volunteer /> : null}
             {mark === "btnInt" ? <Internship /> : null}

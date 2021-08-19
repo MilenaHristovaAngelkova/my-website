@@ -1,6 +1,4 @@
-import { backToTop } from "./backToTop";
-
-const Cs = () => {
+const CsAgent = () => {
     return (
         <article className="job-info" id="job-info-cs">
             <h3>Customer Service Representative</h3>
@@ -16,9 +14,9 @@ const Cs = () => {
                 <li>Escalating and following-up on complex issues</li>
                 <li>Updating team processes</li>
             </ul>
-            <button onClick={backToTop}>Back to top</button>
+            <button className="btn-top" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
         </article>
     );
 }
  
-export default Cs;
+export default CsAgent;

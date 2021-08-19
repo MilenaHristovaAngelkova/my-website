@@ -1,5 +1,3 @@
-import { backToTop } from "./backToTop";
-
 const Internship = () => {
     return (
         <article className="job-info" id="job-info-intr">
@@ -13,7 +11,7 @@ const Internship = () => {
                 <li>Carrying out research</li>
                 <li>Partaking in workshops and presentations</li>
             </ul>
-            <button onClick={backToTop}>Back to top</button>
+            <button className="btn-top" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
         </article>
     );
 }

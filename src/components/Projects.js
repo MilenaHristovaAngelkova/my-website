@@ -1,7 +1,7 @@
 import { useState } from "react";
-import resume from "./images/Resume.png";
-import homepage from "./images/Homepage.png";
-import space from "./images/Space-stuff.png";
+import resume from "../images/Resume.png";
+import homepage from "../images/Homepage.png";
+import space from "../images/Space-stuff.png";
 import ResumeSection from "./ResumeSection";
 import HomepageSection from "./HomepageSection";
 import SpaceStuffSection from "./SpaceStuffSection";
@@ -22,7 +22,7 @@ const Projects = () => {
                         <button onClick={() => {
                             mark !== "spaceStuffMore" ? setMark("spaceStuffMore") : setMark("")
                             }}>
-                            {mark !== "spaceStuffMore" ? "More details" : "Less details"}
+                            {mark !== "spaceStuffMore" ? <a href="#space-more">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -36,7 +36,7 @@ const Projects = () => {
                         <button onClick={() => {
                             mark !== "homepageMore" ? setMark("homepageMore") : setMark("")
                             }}>
-                            {mark!== "homepageMore" ? "More details" : "Less details"}
+                            {mark!== "homepageMore" ? <a href="#homepage-more">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
@@ -50,7 +50,7 @@ const Projects = () => {
                         <button onClick={() => {
                             mark !== "resumeMore" ? setMark("resumeMore") : setMark("")
                             }}>
-                            {mark !== "resumeMore" ? "More details" : "Less details"}
+                            {mark !== "resumeMore" ? <a href="#resume-more">More details</a> : "Less details"}
                         </button>
                     </section>
                 </div>
