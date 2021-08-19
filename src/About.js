@@ -6,6 +6,9 @@ const About = () => {
             <div className="photo">
                 <img src={myImg} alt="Me" />
             </div>
+            <span id="smallBubble1"></span>
+            <span id="smallBubble2"></span>
+            <span id="smallBubble3"></span>
             <div className="about-wrapper">
                 <section className="about-info">
                     <p>I took a rather winding path to get into coding, but sometimes it takes time to find something that you

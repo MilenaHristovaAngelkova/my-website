@@ -47,18 +47,6 @@ a {
     animation: typing 4s steps(30, end);
 }
 
-.home h2 {
-    color: yellow;
-    font-weight: bold;
-    text-shadow: 0 0 5px black;
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 400;
-    padding: 0;
-    white-space: nowrap;
-    letter-spacing: 0.1em;
-    margin: -5vh 0 0 -23vw;
-}
-
 .bubbles {
     display: flex;
     margin: 0;
@@ -832,18 +820,14 @@ address a:hover {
 /* About section styles */
 .about {
     display: flex;
-    /* margin: 0 19vw; */
 }
 
 .photo img {
-    /* height: 50vh;
-    width: 17vw; */
     height: 20vh;
     width: 7vw;
     margin-right: 5vw;
-    /* margin-top: 6vh; */
     margin-top: -10vh;
-    margin-left: 15vw;
+    margin-left: 14.7vw;
 }
 
 .about-wrapper {
@@ -862,20 +846,6 @@ address a:hover {
     justify-content: center;
 }
 
-/* .about-wrapper::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 1.55rem solid transparent;
-    border-right-color: rgba(169, 215, 241, 0.4);
-    border-left: 0;
-    margin-top: -1.55rem;
-    margin-left: -1.55rem;
-} */
-
 .about-info {
     position: absolute;
     color: whitesmoke;
@@ -885,4 +855,37 @@ address a:hover {
     line-height: 1.6rem;
     text-align: center;
     margin-top: 9vh;
+}
+
+#smallBubble1 {
+    height: 3vh;
+    width: 1.5vw;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 
+        inset 2px 3px 10px 0.5px rgba(169, 215, 241, 0.5),
+        5px 10px 30px 3px rgba(19, 19, 49, 0.5);
+    margin: 6vh 0 0 -4vw;
+}
+
+#smallBubble2 {
+    height: 4vh;
+    width: 2vw;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 
+        inset 2px 3px 10px 0.5px rgba(169, 215, 241, 0.5),
+        5px 10px 30px 3px rgba(19, 19, 49, 0.5);
+    margin: 8vh 0 0 1vw;
+}
+
+#smallBubble3 {
+    height: 6vh;
+    width: 3vw;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 
+        inset 2px 3px 10px 0.5px rgba(169, 215, 241, 0.5),
+        5px 10px 30px 3px rgba(19, 19, 49, 0.5);
+    margin: 10vh 0 0 1vw;
 }

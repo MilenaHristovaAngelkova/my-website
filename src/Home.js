@@ -5,7 +5,6 @@ const Home = (props) => {
         <div className="home">
             <header>
                 <span><h1>Welcome to my website</h1></span>
-                <span><h2>UNDER CONSTRUCTION</h2></span>
             </header>
             <nav className="bubbles hov">
                 <span id="skills"><button><Link to="/skills">Skills</Link></button></span>
