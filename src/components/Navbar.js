@@ -13,7 +13,9 @@ const Navbar = () => {
         }
         
         let element = document.getElementById(path + "-link");
-        element ? element.classList.add("link-selected") : element.classList.add("");
+        if (element !== null) {
+            element ? element.classList.add("link-selected") : element.classList.add("");
+        }
     }, [selectedL]);
     
     return (

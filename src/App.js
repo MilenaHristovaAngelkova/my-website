@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Footer from './components/Footer';
 import About from './components/About';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
               </Route>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="*">
+                <NotFound />
               </Route>
             </Switch>
             <Footer />

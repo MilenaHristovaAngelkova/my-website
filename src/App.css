@@ -929,3 +929,24 @@ address a:hover {
         5px 10px 30px 3px rgba(19, 19, 49, 0.5);
     margin: 10vh 0 0 1vw;
 }
+
+/* NotFound section styles */
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24vh;
+    color: seashell;
+}
+
+.not-found h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.not-found p {
+    color: white;
+    font-size: 1.1rem;
+}
