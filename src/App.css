@@ -47,9 +47,9 @@ a {
     margin: 0 auto;
     letter-spacing: 0.1em;
     -webkit-animation: typing 4s steps(30, end);
-    -moz-animation: typing 3.5s steps(30, end);
-    -ms-animation: typing 3.5s steps(30, end);
-    -o-animation: typing 3.5s steps(30, end);
+    -moz-animation: typing 4s steps(30, end);
+    -ms-animation: typing 4s steps(30, end);
+    -o-animation: typing 4s steps(30, end);
     animation: typing 4s steps(30, end);
 }
 
@@ -253,6 +253,10 @@ a {
 
 .name a:hover {
     text-shadow: 1px 1px 1px rgb(172, 221, 228);
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .links a {
@@ -493,7 +497,7 @@ address a:hover {
     color: rgb(8, 8, 36);
     font-weight: bold;
     border-radius: 8px;
-    width: 6vw;
+    width: 7vw;
     height: 4vh;
     cursor: pointer;
 }
@@ -687,13 +691,13 @@ address a:hover {
 }
 
 .job-description h3 {
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
 }
 
 .job-description h4 {
-    font-size: 0.9rem;
-    margin: 1rem 0;
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
 }
 
 .job-description p {
@@ -707,7 +711,7 @@ address a:hover {
     color: rgb(8, 8, 36);
     font-weight: bold;
     border-radius: 8px;
-    width: 6vw;
+    width: 7vw;
     height: 4vh;
     cursor: pointer;
 }
@@ -949,4 +953,203 @@ address a:hover {
 .not-found p {
     color: white;
     font-size: 1.1rem;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1295px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    /* Home page styles */
+    .home {
+        padding-bottom: 10vh;
+    }
+
+    .home header {
+        margin: 10vh;
+    }
+
+    .home header h1 {
+        font-size: 0.8rem;
+        -webkit-animation: typing 2.5s steps(30, end);
+        -moz-animation: typing 2.5s steps(30, end);
+        -ms-animation: typing 2.5s steps(30, end);
+        -o-animation: typing 2.5s steps(30, end);
+        animation: typing 2.5s steps(30, end);
+    }
+
+    .bubbles,
+    .more-bubbles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bubble-bullet {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent; 
+        border-radius: 50%;
+        box-shadow: 
+            inset 2px 3px 10px 0.5px rgba(169, 215, 241, 0.5),
+            5px 10px 30px 3px rgba(19, 19, 49, 0.5);
+        -webkit-animation: bubbles-motion 20s linear infinite;
+        -moz-animation: bubbles-motion 20s linear infinite;
+        -ms-animation: bubbles-motion 20s linear infinite;
+        -o-animation: bubbles-motion 20s linear infinite;
+        animation: bubbles-motion 20s linear infinite;
+    }
+
+    .home a {
+        height: 6.5rem;
+        width: 6.5rem;
+        box-shadow: 
+            inset 2px 3px 10px 0.5px rgba(169, 215, 241, 0.5),
+            5px 10px 30px 3px rgba(19, 19, 49, 0.5);
+        font-size: 0.7rem;
+        -webkit-animation: bubbles-motion 20s linear infinite;
+        -moz-animation: bubbles-motion 20s linear infinite;
+        -ms-animation: bubbles-motion 20s linear infinite;
+        -o-animation: bubbles-motion 20s linear infinite;
+        animation: bubbles-motion 20s linear infinite;
+     }
+
+    .bubbles a,
+    .more-bubbles a {
+        text-align: center;
+    }
+ 
+    #skillsB,
+    #projectsB,
+    #experienceB,
+    #educationB,
+    #aboutB {
+        margin: 2.5rem;
+    }
+
+    .hov a:hover {
+        animation: none;
+        height: 7rem;
+        width: 7rem;
+    }
+
+    @-webkit-keyframes bubbles-motion {
+        0% {
+            transform: translateY(0vh);
+        }
+
+        12.5% {
+            transform: translateY(1vh);
+        }
+
+        25% {
+            transform: translateY(2vh);
+        }
+
+        50% {
+            transform: translateY(3vh);
+        }
+
+        75% {
+            transform: translateY(-2vh);
+        }
+
+        87.5% {
+            transform: translateY(-1vh);
+        }
+
+        100% {
+            transform: translateY(0vh);
+        }
+    }
+
+    @keyframes bubbles-motion {
+        0% {
+            transform: translateY(0vh);
+        }
+
+        12.5% {
+            transform: translateY(1vh);
+        }
+
+        25% {
+            transform: translateY(2vh);
+        }
+
+        50% {
+            transform: translateY(3vh);
+        }
+
+        75% {
+            transform: translateY(-2vh);
+        }
+
+        87.5% {
+            transform: translateY(-1vh);
+        }
+
+        100% {
+            transform: translateY(0vh);
+        }
+    }
+
+    /* Navbar styles */
+
+    .name a {
+        font-size: 0.9rem;
+        position: absolute;
+        left: 5vw;
+        max-width: 80vw;
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        right: 5vw;
+        cursor: pointer;
+    }
+
+    .mob-menu-icon {
+        color: rgb(172, 221, 228);
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .mob-menu-icon:hover {
+        color: seashell;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        width: 100%;
+        height: 50%;
+        background-image: linear-gradient(rgba(26, 26, 31, 0.9) 40%, transparent 60%);
+        z-index: 1;
+        padding: 3vh 5vw 3vh 55vw;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        transition: none;
+    }
+
+    .links a:hover {
+        transition: none;
+        text-shadow: 0.1px 0.1px 0.1px rgb(172, 221, 228);
+    }
+
+    .link-selected {
+        color: rgb(172, 221, 228) !important;
+        border-bottom: none;
+    }
 }

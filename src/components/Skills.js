@@ -10,7 +10,7 @@ const Skills = () => {
                     style= {{ backgroundImage: `url(${coding})` }}>
                 </div>
                 <section className="text" id="coding-text">
-                   <h3 class="main-heading">Coding-Related Skills</h3>
+                   <h3 className="main-heading">Coding-Related Skills</h3>
                    <div className="coding-details">
                    <h3>Coding-Related Skills</h3>
                    <ul id="coding-main-ul">
@@ -32,7 +32,7 @@ const Skills = () => {
                     style= {{ backgroundImage: `url(${computer})` }}>
                 </div>
                 <section className="text" id="general-text">
-                   <h3 class="main-heading">General Computer Skills</h3>
+                   <h3 className="main-heading">General Computer Skills</h3>
                    <div className="general-details">
                    <h3>General Computer Skills</h3>
                     <ul>
@@ -49,7 +49,7 @@ const Skills = () => {
                     style= {{ backgroundImage: `url(${city})` }}>
                 </div>
                 <section className="text" id="other-text">
-                    <h3 class="main-heading">Other Skills</h3>
+                    <h3 className="main-heading">Other Skills</h3>
                     <div className="other-details">
                     <h3>Other Skills</h3>
                         <h4>Languages</h4>
