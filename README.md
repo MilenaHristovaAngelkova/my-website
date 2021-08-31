@@ -1,6 +1,10 @@
 # Personal website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a personal website, which is currently published here: https://milenahristovaangelkova.github.io/my-website/. It is not fully responsive yet (it is currenly responsive for notebook/laptop/PC). I plan to add responsive functionality in future.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+
+It is a personal website, which is currently published [here](https://milenahristovaangelkova.github.io/my-website/). 
+
+I am working on making the site fully responsive for mobile (it is currenly responsive for notebook/laptop/PC).
 
 ## Available Scripts
 

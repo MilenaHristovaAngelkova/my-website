@@ -463,11 +463,10 @@ address a:hover {
 }
 
 .description {
-    visibility: hidden;
+    display: none;
 }
 
 .projects-wrapper:hover .description {
-    visibility: visible; 
     position: absolute;
     color: seashell;
     background-color: rgba(0, 0, 0, 0.7);
@@ -966,11 +965,11 @@ address a:hover {
 
     /* Home page styles */
     .home {
-        padding-bottom: 10vh;
+        padding-bottom: 5rem;
     }
 
     .home header {
-        margin: 10vh;
+        margin: 3rem 0;
     }
 
     .home header h1 {
@@ -1152,4 +1151,235 @@ address a:hover {
         color: rgb(172, 221, 228) !important;
         border-bottom: none;
     }
+
+    /* Skills section styles */
+
+    .skills {
+        display: flex;
+        flex-direction: column;;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .wrapper {
+        height: 10rem;
+        width: 10rem;
+        margin: 0 0.5rem 0.5rem;
+        box-shadow: 5px 10px 30px 0.5px rgba(172, 221, 228, 0.4);
+    }
+
+    .wrapper:hover {
+        height: 30rem;
+        width: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .background {
+        height: 10rem;
+    }
+
+    .text .main-heading {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 0.2rem;
+    }
+
+    #coding-main-ul {
+        margin-left: 1.5rem;
+    }
+
+    .general-details ul {
+        margin-left: 3rem;
+    }
+
+    .general-details li {
+        font-size: 0.8rem;
+    }
+
+    .general-details li {
+        margin-bottom: 0.5rem;
+        margin-right: 2rem;
+        text-align: left;
+    }
+
+    .coding-details h3,
+    .general-details h3 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .coding-details h3 {
+        font-size: 1.1rem;
+    }
+
+    .general-details h3 {
+        font-size: 1rem;
+    }
+
+    .other-details h3 {
+        font-size: 1.1rem;
+    }
+
+    .other-details h4 {
+        margin-left: 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    .other-sublist {
+        font-size: 0.8rem;
+    }
+
+    /* Projects section styles */
+
+    .projects {
+        grid-template-columns: 1fr;
+        margin: 1rem 1.3rem;
+        padding-bottom: 15rem;
+    }
+    
+    .projects-wrapper {
+        height: 6rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+        box-shadow: 5px 10px 30px 0.5px rgba(172, 221, 228, 0.4);
+     }
+    
+    .projects-background {
+        height: 6rem;
+        border: 11px solid black;
+    }
+      
+    .projects-wrapper:hover .description {
+        padding: 1rem 0.2rem;
+    }
+
+    .description h3 {
+        font-size: 0.8rem;
+    }
+    
+    .description p {
+        font-size: 0.6rem;
+        margin: 0.5rem auto;
+        padding-bottom: 0.2rem;
+    }
+    
+    .description button {
+        border-radius: 6px;
+        width: 4rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+
+    /* Space Stuff section styles */
+
+    .space-stuff-details {
+        margin: 0 0.5rem;
+    }
+
+    .space-stuff-details h3 {
+        font-size: 1rem;
+        margin: 3rem auto;
+    }
+
+    .space-stuff-imgs {
+        margin: 0.2rem;
+    }
+
+    #space-stuff-img-details {
+        height: 6rem;
+        width: 8rem;
+        margin-right: 0.2rem;
+    }
+
+    #space-stuff-img-mob {
+        height: 6rem;
+        width: 2rem;
+    }
+
+    .space-stuff-more-info {
+        font-size: 0.8rem;
+        margin: 3rem 0.5rem;
+    }
+
+    /* Homepage section styles */
+
+    .homepage-details h3 {
+        font-size: 1rem;
+        margin: 3rem 0.5rem;
+    }
+
+    .homepage-details video {
+        height: 16rem;
+        width: 10rem;
+        margin-top: -5.5rem;
+    }
+
+    .homepage-more-info {
+        margin: 3rem 0;
+        font-size: 0.8rem;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+
+    /* Resume section styles */
+
+    .resume-details {
+        margin: 0 0.5rem;
+    }
+
+    .resume-imgs {
+        grid-template-columns: 1fr;
+        max-width: 10rem;
+    }
+
+    .resume-details h3 {
+        font-size: 1rem;
+        margin: 3rem 0.5rem;
+    }
+
+    #resume-img-details {
+        height: 7rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    #resume-img-mob, 
+    #resume-mob-details {
+        height: 6rem;
+        width: 2.5rem;
+        margin: 1rem 4.5rem;
+    }
+
+    .resume-more-info {
+        font-size: 0.8rem;
+        text-align: justify;
+        margin: 3rem 0;
+        padding: 0 0.5rem;
+    }
+
+    /* Button to top of page styles */
+
+    .btn-top,
+    .btn-top-projects {
+        border-radius: 7px;
+        width: 5rem;
+        height: 2rem;
+        margin: 0 3rem;
+        font-size: 0.8rem;
+    }
+
+    /* .btn-top {
+        margin: 0 0 10vh 35vw;
+    } */
+
+    .btn-top-projects {
+        margin-bottom: 10rem;
+    }
+
+    #btn-homepage-top {
+        margin: 0 0 10rem 0;
+    }
+
 }

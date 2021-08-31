@@ -13,10 +13,10 @@ const SpaceStuffSection = () => {
                 <section className="space-stuff-more-info">
                     <p>This was my first React app. It fetches information about a space image of the day
                     and asteroid/comet close approaches to Earth from NASA free APIs. The app is responsive.</p><br />
-                    <p>You can see it here: <a href="https://milenahristovaangelkova.github.io/space-stuff-project/">
-                    https://milenahristovaangelkova.github.io/space-stuff-project/</a></p>
-                    <p>My GitHub repo for it is <a href="https://github.com/MilenaHristovaAngelkova/space-stuff-project/tree/master">
-                    https://github.com/MilenaHristovaAngelkova/space-stuff-project/tree/master</a></p>
+                    <p>To see it click <a href="https://milenahristovaangelkova.github.io/space-stuff-project/">
+                    here</a>.</p>
+                    <p>To see my GitHub repo for it click <a href="https://github.com/MilenaHristovaAngelkova/space-stuff-project/tree/master">
+                    here</a>.</p>
                 </section> 
             </div>
             <button className="btn-top-projects" onClick={() => window.scrollTo(0, 0)}>Back to top</button>
