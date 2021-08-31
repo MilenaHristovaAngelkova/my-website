@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.470d0213.chunk.css",
-    "main.js": "/my-website/static/js/main.cfa90acf.chunk.js",
-    "main.js.map": "/my-website/static/js/main.cfa90acf.chunk.js.map",
+    "main.css": "/my-website/static/css/main.c8749692.chunk.css",
+    "main.js": "/my-website/static/js/main.31c1adef.chunk.js",
+    "main.js.map": "/my-website/static/js/main.31c1adef.chunk.js.map",
     "runtime-main.js": "/my-website/static/js/runtime-main.ecd9b44f.js",
     "runtime-main.js.map": "/my-website/static/js/runtime-main.ecd9b44f.js.map",
     "static/js/2.decda13f.chunk.js": "/my-website/static/js/2.decda13f.chunk.js",
     "static/js/2.decda13f.chunk.js.map": "/my-website/static/js/2.decda13f.chunk.js.map",
     "index.html": "/my-website/index.html",
-    "static/css/main.470d0213.chunk.css.map": "/my-website/static/css/main.470d0213.chunk.css.map",
+    "static/css/main.c8749692.chunk.css.map": "/my-website/static/css/main.c8749692.chunk.css.map",
     "static/js/2.decda13f.chunk.js.LICENSE.txt": "/my-website/static/js/2.decda13f.chunk.js.LICENSE.txt",
     "static/media/Bubbles.4d1570b6.mp4": "/my-website/static/media/Bubbles.4d1570b6.mp4",
     "static/media/Homepage.352ca58e.png": "/my-website/static/media/Homepage.352ca58e.png",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.ecd9b44f.js",
     "static/js/2.decda13f.chunk.js",
-    "static/css/main.470d0213.chunk.css",
-    "static/js/main.cfa90acf.chunk.js"
+    "static/css/main.c8749692.chunk.css",
+    "static/js/main.31c1adef.chunk.js"
   ]
 }
