@@ -2,9 +2,11 @@ import { useState } from "react";
 import resume from "../images/Resume.png";
 import homepage from "../images/Homepage.png";
 import space from "../images/Space-stuff.png";
+import Currencies from "../images/Currencies.png"
 import ResumeSection from "./ResumeSection";
 import HomepageSection from "./HomepageSection";
 import SpaceStuffSection from "./SpaceStuffSection";
+import CurrenciesSection from "../CurrenciesSection";
 
 const Projects = () => {
     const [mark, setMark] = useState("");
@@ -12,6 +14,20 @@ const Projects = () => {
     return (
         <div className="projects-container">
             <article className="projects">
+            <div className="projects-wrapper">
+                    <div className="projects-background" 
+                        style= {{ backgroundImage: `url(${Currencies})` }}>
+                    </div>
+                    <section className="description">
+                        <h3>Currencies Project</h3>
+                        <p>This is a project that fetches currency rates.</p>
+                        <button onClick={() => {
+                            mark !== "currenciesMore" ? setMark("currenciesMore") : setMark("")
+                            }}>
+                            {mark !== "currenciesMore" ? <a href="#currencies-more">More details</a> : "Less details"}
+                        </button>
+                    </section>
+                </div>
                 <div className="projects-wrapper">
                     <div className="projects-background" 
                         style= {{ backgroundImage: `url(${space})` }}>
@@ -58,6 +74,7 @@ const Projects = () => {
             {mark === "resumeMore" ? <ResumeSection /> : null}
             {mark === "homepageMore" ? <HomepageSection /> : null}
             {mark === "spaceStuffMore" ? <SpaceStuffSection /> : null}
+            {mark === "currenciesMore" ? <CurrenciesSection /> : null}
         </div>
     );
 }
